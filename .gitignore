@@ -35,3 +35,34 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Visual Studio / .NET #
+########################
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results #
+#################
+[Bb]in/
+[Oo]bj/
+*.db
+*.pdb
+*.mdb
+*.idb
+*.ilk
+*.ipch
+*.iobj
+*.ipdb
+*.obj
+*.exe
+*.dll
+
+# NuGet #
+##########
+*.nupkg
+*.snupkg
+project.assets.json
+project.nuget.cache
