@@ -3,19 +3,54 @@
   padding: 0;
   border: 0;
 }
-#map {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    }
-  html, body 
-  {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+html{
+  background-color: #111;
+}
+
+html, body {
+  height: 100%; 
+  overflow: hidden
+}
+
+.gridrow{
+  display: grid;
+  grid-template-rows: 65px;
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+
+.navbar{
+  background: #323232;
+  border-radius: 10px;
+  width: 100%;
+  height: 65px;
+}
+.navbar-container{
+  z-index: 1;
+  background: #323232;
+  width: 100%;
+  height: 10px;
+}
+
+
+.sidebar{
+  height: 100svh;
+  width: 100px;
+  background-color: #111;
+}
+
+.sidebar a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
 
 .logo{
   padding-top: 10px;
@@ -28,46 +63,8 @@
   letter-spacing: 5%;
 }
 
-.navbar{
-  position: absolute;
-  z-index: 1;
-  background: #323232;
-  border-radius: 10px;
+.map {
+  height: 91%;
   width: 100%;
-  height: 65px;
-}
-.navbar-container{
-  background: #323232;
-  width: 100%;
-  height: 10px;
 }
 
-.sidebar{
-  
-  position: absolute;
-  z-index: -1;
-  background-color: #171717;
-  width: 84px;
-  height: 100vh;
-}
-.sidebar-container{
-  background-color: #171717;
-  width: 10px;
-  height: 100vh;
-}
-.sidebar a{
-  display: block;
-
-  margin: 10px;
-  padding: 10px;
-  padding-top: 75px;
-}
-
-.map-container{
-  display: flex;
-  height: 100%;
-}
-
-.flex{
-  display: flex;
-}
