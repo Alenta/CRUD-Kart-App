@@ -1,3 +1,6 @@
+using System.Text.Json;
+using Microsoft.AspNetCore.Http;
+
 namespace CRUD_Kart_App;
 
 public class Program
@@ -6,7 +9,11 @@ public class Program
     {
         //==============SERVER SETUP=============//
         var builder = WebApplication.CreateBuilder(args);
+    
         // Add services to the container.
+        builder.Services.AddHttpClient();
+
+        // Add services to the container ((Razor)).
         builder.Services.AddRazorPages();
         var app = builder.Build();
         // Configure the HTTP request pipeline.
@@ -25,9 +32,33 @@ public class Program
         app.Run();
 
         //====================END POINTS===================//
-        app.MapGet("/health", () => "Server status: OK");
+        //app.MapGet("/health", () => "Server status: OK");
 
-        //When a user inputs a search 
+        app.MapGet("/geocode", async (string address, IHttpClientFactory httpClientFactory) =>
+        {
+            var httpClient = httpClientFactory.CreateClient();
+            var apiKey = "my-api-key"; //The api key
+            var url = $"https://maps.googleapis.com/maps/api/geocode/json?address={Uri.EscapeDataString(address)}&key={apiKey}";
+
+            var response = await httpClient.GetAsync(url);
+            if (!response.IsSuccessStatusCode)
+            {
+                return Results.Problem("Error calling the Geocoding API");
+            }
+
+            var json = await response.Content.ReadAsStringAsync();
+            var geocodeResponse = JsonSerializer.Deserialize<GeocodeResponse>(json);
+
+            // Check response status
+            if (geocodeResponse?.Status == "OK" && geocodeResponse.Results.Length > 0)
+            {
+                return Results.Ok(geocodeResponse.Results[0].Geometry.Location);
+            }
+
+            return Results.NotFound("Address not found");
+        });
+
+        //When a user inputs a search
         app.MapGet("/maps/search/", () => "");
 
         //When a user clicks on a saved pin
