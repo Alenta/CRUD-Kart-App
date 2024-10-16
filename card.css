@@ -1,0 +1,72 @@
+.card
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgb(54, 54, 54);
+    width: 400px;
+    height: 76px;
+    border-radius: 10px;
+    border: solid;
+}
+
+.img{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    padding-top: 6px;
+    width: 38px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.cardPin
+{
+    padding-left: 10px;
+    width: 40px;
+    height: 64px;
+}
+.cardInfo{
+    color: white;
+    max-width: 200px;
+    padding:0;
+    margin:0;
+    justify-content: space-around;
+}
+
+.cardInfo p{
+    text-align: right;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+}
+.cardInfo h3{
+    text-align: right;
+    font-size: x-large;
+    font-weight: normal;
+    padding-top: 7px;
+    margin:0;
+}
+
+.cardUpdates{
+    text-align: center;
+    padding-top: 10px;
+    margin:0;
+    font-size: normal;
+
+}
+.cardUpdates p{
+    padding:0;
+    margin:0;
+}
+
+#update1{
+    color: red;
+}
+#update2{
+    color: green;
+}
+#update3{
+    color: yellow;
+}

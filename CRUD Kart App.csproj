@@ -7,4 +7,8 @@
     <RootNamespace>CRUD_Kart_App</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
+  </ItemGroup>
+
 </Project>
