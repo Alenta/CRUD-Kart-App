@@ -1,4 +1,21 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
 
-// Write your JavaScript code.
+var state = false;
+window.ToggleSideOverlay = ToggleSideOverlay;
+window.DeleteParentElement = DeleteParentElement;
+
+function ToggleSideOverlay() {
+    if(state===false) {
+        document.getElementById("overlay").style.display = "block";
+        state = true;
+    }
+    else {
+        document.getElementById("overlay").style.display = "none";
+        state = false;
+    }
+}
+
+function DeleteParentElement(ID) {
+    console.log("fishy");
+    let parentID = this.parent.parent.ID;
+    document.getElementById(parentID).remove()
+}

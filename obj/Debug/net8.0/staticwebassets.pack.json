@@ -5,8 +5,40 @@
       "PackagePath": "staticwebassets\\CRUD Kart App.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\index.js",
-      "PackagePath": "staticwebassets\\js\\index.js"
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\icons\\BurgerMenu.png",
+      "PackagePath": "staticwebassets\\icons\\BurgerMenu.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\icons\\Directions.png",
+      "PackagePath": "staticwebassets\\icons\\Directions.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\icons\\MarkerWhite.png",
+      "PackagePath": "staticwebassets\\icons\\MarkerWhite.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\icons\\SavedFolder.png",
+      "PackagePath": "staticwebassets\\icons\\SavedFolder.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\img\\Flow.png",
+      "PackagePath": "staticwebassets\\img\\Flow.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\img\\FrontPage.png",
+      "PackagePath": "staticwebassets\\img\\FrontPage.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\img\\Sequence.png",
+      "PackagePath": "staticwebassets\\img\\Sequence.png"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\test.js",
+      "PackagePath": "staticwebassets\\js\\test.js"
     },
     {
       "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -235,6 +267,10 @@
     {
       "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CRUD Kart App.Microsoft.AspNetCore.StaticWebAssets.props",

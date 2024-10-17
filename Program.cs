@@ -4,25 +4,27 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(Environment.GetEnvironmentVariable("API_KEY"));
         //==============SERVER SETUP=============//
         var builder = WebApplication.CreateBuilder(args);
-        // Add services to the container.
-        builder.Services.AddRazorPages();
         var app = builder.Build();
+
+        // Add services to the container.
+        //builder.Services.AddRazorPages();
         // Configure the HTTP request pipeline.
+        /*
         if (!app.Environment.IsDevelopment())
         {
             app.UseExceptionHandler("/Error");
             // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
         }
+        */
 
         app.UseDefaultFiles();
         app.UseStaticFiles();
         
-        //app.UseHttpsRedirection(); <-- Gives warning for now. Needed?
-        //app.UseRouting(); Dunno?
+        //app.UseHttpsRedirection(); //<-- Gives warning for now. Needed?
+        app.UseRouting(); //Dunno?
         //app.UseAuthorization(); Dunno?
         //app.MapRazorPages(); Dunno?
         app.Run();
@@ -44,6 +46,10 @@ public class Program
 
         //When a user deletes an old pin
         app.MapDelete("/deletePin", ()=> "");
+
+        app.MapGet("/map-token", ()=> Environment.GetEnvironmentVariable("API_KEY"));
+
+        app.MapGet("/test", () => "test");
 
         
     }
