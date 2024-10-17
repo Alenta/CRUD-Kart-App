@@ -39,3 +39,4 @@ Thumbs.db
 
 # Special files #
 specialappsettings.config
+*.sh

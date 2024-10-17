@@ -5,16 +5,8 @@
       "PackagePath": "staticwebassets\\CRUD Kart App.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
     },
     {
       "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\lib\\bootstrap\\LICENSE",

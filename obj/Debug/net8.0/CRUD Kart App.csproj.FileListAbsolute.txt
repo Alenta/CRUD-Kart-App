@@ -29,3 +29,13 @@ C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\obj\Debug\n
 C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\obj\Debug\net8.0\CRUD Kart App.genruntimeconfig.cache
 C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\obj\Debug\net8.0\ref\CRUD Kart App.dll
 C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\obj\Debug\net8.0\CRUD Kart App.sourcelink.json
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\specialappsettings.config
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\web.config
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\package-lock.json
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\package.json
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\obj\Debug\net8.0\CRUD Kart App.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Skrivebord\Kodehode\Prosjekter\CRUD Kart App\obj\Debug\net8.0\CRUD Kar.C1E6F524.Up2Date

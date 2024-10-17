@@ -31,12 +31,6 @@ html, body {
   width: 100%; /* Ensure the flex container takes full width */
 }
 
-.flexRight {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Spread out items within flexRight */
-  flex-grow: 1; /* Allow flexRight to take up remaining space */
-}
 
 .flexRight{
   /*display: flex;
@@ -130,11 +124,9 @@ html, body {
 }
 
 .khDetails, .subhead {
-  
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
-
 }
 
 .subhead{

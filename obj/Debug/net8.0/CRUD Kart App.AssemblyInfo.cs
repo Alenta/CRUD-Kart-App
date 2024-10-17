@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD Kart App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e23c0557363b69b499455685044dc7aaa833bd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+819dfd8fa54afd01064fab88ab40a722680a5a5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD Kart App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD Kart App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

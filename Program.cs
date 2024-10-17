@@ -4,6 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine(Environment.GetEnvironmentVariable("API_KEY"));
         //==============SERVER SETUP=============//
         var builder = WebApplication.CreateBuilder(args);
         // Add services to the container.
@@ -43,5 +44,7 @@ public class Program
 
         //When a user deletes an old pin
         app.MapDelete("/deletePin", ()=> "");
+
+        
     }
 }
