@@ -4,6 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine(Environment.GetEnvironmentVariable("API_KEY"));
         //==============SERVER SETUP=============//
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
@@ -27,7 +28,6 @@ public class Program
         app.UseRouting(); //Dunno?
         //app.UseAuthorization(); Dunno?
         //app.MapRazorPages(); Dunno?
-        app.Run();
 
         //====================END POINTS===================//
         app.MapGet("/health", () => "Server status: OK");
@@ -47,10 +47,17 @@ public class Program
         //When a user deletes an old pin
         app.MapDelete("/deletePin", ()=> "");
 
-        app.MapGet("/map-token", ()=> Environment.GetEnvironmentVariable("API_KEY"));
+        app.MapGet("/map-token", () => {
+            return Environment.GetEnvironmentVariable("API_KEY");
+        });
 
         app.MapGet("/test", () => "test");
 
+
         
+
+        //=================RUN APP=============//
+        app.Run();
+
     }
 }

@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\maps.js",
+      "PackagePath": "staticwebassets\\js\\maps.js"
+    },
+    {
       "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\test.js",
       "PackagePath": "staticwebassets\\js\\test.js"
     },

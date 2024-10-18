@@ -90,17 +90,7 @@ html, body {
   align-items: center;
 }
 
-.logo{/*
-  color: rgb(188, 40, 40);
-  font-family: "Lexend Zetta", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: 1px;
-  text-align: center; /* Center text within the logo 
-  flex-grow: 1; /* Allow the logo to take up remaining space 
-  */
-
+.logo{
   color: rgb(188, 40, 40);
   font-family: "Lexend Zetta", sans-serif;
   font-optical-sizing: auto;
@@ -114,11 +104,16 @@ html, body {
   transform: translateX(-50%);
 }
 
-.map {
+#map {
+  z-index: -1;
   background-color: white;
   height: 91%;
   width: 100%;
 }
+#map:focus{
+  
+}
+
 
 .khLogo{
   padding-top: 10px;
@@ -176,12 +171,21 @@ html, body {
   z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
+#createpin{
+  background-color: rgb(180, 180, 226);
+  outline: none;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
 
 h4{
   padding-top: 10px;
   text-align: center;
   color: white;
-  size: 36px;
+  font-size: 26px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
@@ -189,7 +193,8 @@ h4{
 .hr-overlay{
   color: white;
   font-weight: 400;
-  width: 70%;
+  height: 1px;
+  flex: 0 0 100%;
   border: none;
 }
 
@@ -258,6 +263,7 @@ h4{
 
 }
 .cardUpdates p{
+    color:white;
     padding:0;
     margin:0;
 }
@@ -280,7 +286,7 @@ h4{
     padding-left: 14px;
     padding-right: 0px;
 }
-#removePin{
+.removeCard{
     cursor: pointer;
     width: 20px;
     height: 16px;

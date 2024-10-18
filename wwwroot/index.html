@@ -5,25 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--      <script src="_framework/blazor.webassembly.js"></script> -->
-    <!--  <script type="module" src="./js/test.js"></script> -->
+    <!--      <script type="module" src="./js/test.js"></script>
+ -->
     <link rel="stylesheet" href="./style.css">
-    
+    <script type="module" src="./js/maps.js"></script>
     <script type="module" src="./js/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     
-    <script>
-        async function getApiKey() {
-            console.log("Trying to do the API THING");
-            try {
-                var apiKey = await DotNet.invokeMethodAsync('CRUD_Kart_App', 'APIKey');
-                document.getElementById('map').innerText = apiKey;
-            } catch (error) {
-                console.error('Error invoking .NET method:', error);
-            }
-        }
-    </script>
     
     <title>Map Markers</title>
 </head>
@@ -82,67 +71,28 @@
         </div>
 
         <!-------------------------MAP SECTION--------------------------->
-        <div class="map-container">
-            <iframe class="map" id="map"
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="">
-            </iframe>
+        <div class="map-container" id="map">
+            
         </div>
+
+        <script id="API">(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "", v: "weekly"});</script>
     </div>
     
     <div id="overlay">
         <h4>Pinned Locations</h4>
-        <hr class="hr-overlay"/>
+        <button id="createpin" onclick="CreateCard()">Create Pin</button>
+        <hr class="hr-overlay">
         <div id="cardholder">
-            <div class="cardContainer" id="removeCard">
-                <div class="card">
-                    
-                    <div class="cardInfo">
-                        <h3>Address 123</h3>
-                        <p>41.40338, 2.17403</p>
-                        <p>41°24'12.2"N 2°10'26.5"E</p>
-                    </div>
-                    <div class="cardUpdates">
-                        <p id="update1">High traffic</p>
-                        <p id="update2">Currently Open</p>
-                        <p id="update3">Closes in 1 hour</p>
-                    </div>
-                    
-                    <img id="dirIcon" src="./icons/Directions.png" alt="">
-                    <button id="removePin" onclick="DeleteParentElement($(this).parent.parentID)">X</button>
-                </div>
-            </div>
-
-            <div class="cardContainer" id="removeCard">
-                <div class="card">
-                    
-                    <div class="cardInfo">
-                        <h3>Address 123</h3>
-                        <p>41.40338, 2.17403</p>
-                        <p>41°24'12.2"N 2°10'26.5"E</p>
-                    </div>
-                    <div class="cardUpdates">
-                        <p id="update1">High traffic</p>
-                        <p id="update2">Currently Open</p>
-                        <p id="update3">Closes in 1 hour</p>
-                    </div>
-                    
-                    <img id="dirIcon" src="./icons/Directions.png" alt="">
-                    <button id="removePin" onclick="DeleteParentElement(this.parent.parentID)">X</button>
-                </div>
-            </div>
-
+            
             
         </div>
     </div>
+    
 
 <!-- Hidden objects-->
  <div class="cardContainer" id="mastercardcontainer">
     <div class="card">
-        
         <div class="cardInfo">
             <h3 id="cardAddress_0">Address 123</h3>
             <p id="cardDD_0">41.40338, 2.17403</p>
@@ -155,7 +105,7 @@
         </div>
         
         <img id="dirIcon" src="./icons/Directions.png" alt="">
-        <button id="0" onclick="this.DeleteParentElement.bind(this.parent.parentID)">X</button>
+        <button class="removeCard" id="removeCard_0" onclick="DeleteParentElement(this)">X</button>
     </div>
 </div>
 

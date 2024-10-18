@@ -3,7 +3,7 @@ var state = false;
 var index = 0;
 window.ToggleSideOverlay = ToggleSideOverlay;
 window.DeleteParentElement = DeleteParentElement;
-CreateCard();
+window.CreateCard = CreateCard;
 
 function CreateCard(){
     index++;
@@ -17,6 +17,7 @@ function CreateCard(){
     clone.querySelector("#cardupdate1_0").id = "cardupdate1_"+index;
     clone.querySelector("#cardupdate2_0").id = "cardupdate2_"+index;
     clone.querySelector("#cardupdate3_0").id = "cardupdate3_"+index;
+    clone.querySelector("#removeCard_0").id = "removeCard_"+index;
     clonearea.appendChild(clone);
 }
 
@@ -32,7 +33,5 @@ function ToggleSideOverlay() {
 }
 
 function DeleteParentElement(obj) {
-    
-    string = "removeCard_"+obj.id;
-    document.getElementById(parentID).remove()
+    document.getElementById(obj.id).remove();
 }
