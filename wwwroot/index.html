@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--      <script src="_framework/blazor.webassembly.js"></script> -->
+    <!--  <script type="module" src="./js/test.js"></script> -->
     <link rel="stylesheet" href="./style.css">
-    <script type="module" src="./js/test.js"></script>
+    
     <script type="module" src="./js/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -111,7 +112,7 @@
                     </div>
                     
                     <img id="dirIcon" src="./icons/Directions.png" alt="">
-                    <button id="removePin" onclick="DeleteParentElement(this)">X</button>
+                    <button id="removePin" onclick="DeleteParentElement($(this).parent.parentID)">X</button>
                 </div>
             </div>
 
@@ -130,30 +131,33 @@
                     </div>
                     
                     <img id="dirIcon" src="./icons/Directions.png" alt="">
-                    <button id="removePin" onclick="DeleteParentElement(this)">X</button>
+                    <button id="removePin" onclick="DeleteParentElement(this.parent.parentID)">X</button>
                 </div>
             </div>
 
-            <div class="cardContainer" id="removeCard">
-                <div class="card">
-                    
-                    <div class="cardInfo">
-                        <h3>Address 123</h3>
-                        <p>41.40338, 2.17403</p>
-                        <p>41°24'12.2"N 2°10'26.5"E</p>
-                    </div>
-                    <div class="cardUpdates">
-                        <p id="update1">High traffic</p>
-                        <p id="update2">Currently Open</p>
-                        <p id="update3">Closes in 1 hour</p>
-                    </div>
-                    
-                    <img id="dirIcon" src="./icons/Directions.png" alt="">
-                    <button id="removePin" onclick="this.DeleteParentElement.bind(this)">X</button>
-                </div>
-            </div>
+            
         </div>
     </div>
+
+<!-- Hidden objects-->
+ <div class="cardContainer" id="mastercardcontainer">
+    <div class="card">
+        
+        <div class="cardInfo">
+            <h3 id="cardAddress_0">Address 123</h3>
+            <p id="cardDD_0">41.40338, 2.17403</p>
+            <p id="cardCoord_0">41°24'12.2"N 2°10'26.5"E</p>
+        </div>
+        <div class="cardUpdates">
+            <p id="cardupdate1_0">High traffic</p>
+            <p id="cardupdate2_0">Currently Open</p>
+            <p id="cardupdate3_0">Closes in 1 hour</p>
+        </div>
+        
+        <img id="dirIcon" src="./icons/Directions.png" alt="">
+        <button id="0" onclick="this.DeleteParentElement.bind(this.parent.parentID)">X</button>
+    </div>
+</div>
 
 </body>
 </html>
