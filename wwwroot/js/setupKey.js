@@ -12,9 +12,9 @@ async function setupKEY(){
   })
 
   .then((APIKEY) => {
-    console.log(APIKEY);
-    console.log(document.querySelector("#API"));
+    console.log(document.querySelector("#API").key+ "OLD");
     document.querySelector("#API").key = APIKEY;
+    console.log(document.querySelector("#API").key+ "NEW");
   })
 
   .catch((error) => {

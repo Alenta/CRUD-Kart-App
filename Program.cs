@@ -6,14 +6,27 @@ public class Program
     {
         Console.WriteLine(Environment.GetEnvironmentVariable("API_KEY"));
         //==============SERVER SETUP=============//
+        var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         var builder = WebApplication.CreateBuilder(args);
-        var app = builder.Build();
-
         
-
         // Add services to the container.
+
+        //Enable CORS
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy(name: MyAllowSpecificOrigins,
+                      builder =>
+                      {
+                          builder.WithOrigins("http://localhost:5106", "http://127.0.0.1:5500") // Allow specific origins
+                                 .AllowAnyHeader()
+                                 .AllowAnyMethod()
+                                 .AllowCredentials(); // Allow credentials if needed
+                      });
+        });
+        builder.Services.AddControllers();
+
         //builder.Services.AddRazorPages();
-        // Configure the HTTP request pipeline.
+
         /*
         if (!app.Environment.IsDevelopment())
         {
@@ -22,13 +35,13 @@ public class Program
             app.UseHsts();
         }
         */
-
+        var app = builder.Build();
         app.UseDefaultFiles();
         app.UseStaticFiles();
         
         //app.UseHttpsRedirection(); //<-- Gives warning for now. Needed?
-        app.UseRouting(); //Dunno?
-        app.UseCors();
+        //app.UseRouting(); 
+        app.UseCors(MyAllowSpecificOrigins);
         //app.UseAuthorization(); Dunno?
         //app.MapRazorPages(); Dunno?
 
