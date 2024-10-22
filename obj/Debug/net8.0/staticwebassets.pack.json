@@ -45,8 +45,8 @@
       "PackagePath": "staticwebassets\\js\\maps.js"
     },
     {
-      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\test.js",
-      "PackagePath": "staticwebassets\\js\\test.js"
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\setupKey.js",
+      "PackagePath": "staticwebassets\\js\\setupKey.js"
     },
     {
       "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -279,6 +279,14 @@
     {
       "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\test.css",
+      "PackagePath": "staticwebassets\\test.css"
+    },
+    {
+      "Id": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\test.html",
+      "PackagePath": "staticwebassets\\test.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CRUD Kart App.Microsoft.AspNetCore.StaticWebAssets.props",

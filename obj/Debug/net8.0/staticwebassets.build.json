@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9SOrREJ/Wx9D8pJcuoZNaC7/UMORCxtTS522FXHLBac=",
+  "Hash": "y9u/3zyIZrWDuSAJ/kMPhCiRlORbzNABmIDRZoQnwZI=",
   "Source": "CRUD Kart App",
   "BasePath": "_content/CRUD Kart App",
   "Mode": "Default",
@@ -245,12 +245,12 @@
       "OriginalItemSpec": "wwwroot\\js\\maps.js"
     },
     {
-      "Identity": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\test.js",
+      "Identity": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\js\\setupKey.js",
       "SourceId": "CRUD Kart App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\",
       "BasePath": "_content/CRUD Kart App",
-      "RelativePath": "js/test.js",
+      "RelativePath": "js/setupKey.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,7 +261,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\test.js"
+      "OriginalItemSpec": "wwwroot\\js\\setupKey.js"
     },
     {
       "Identity": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -1364,6 +1364,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\test.css",
+      "SourceId": "CRUD Kart App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\",
+      "BasePath": "_content/CRUD Kart App",
+      "RelativePath": "test.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\test.css"
+    },
+    {
+      "Identity": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\test.html",
+      "SourceId": "CRUD Kart App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marti\\OneDrive\\Skrivebord\\Kodehode\\Prosjekter\\CRUD Kart App\\wwwroot\\",
+      "BasePath": "_content/CRUD Kart App",
+      "RelativePath": "test.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\test.html"
     }
   ]
 }

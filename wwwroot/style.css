@@ -33,11 +33,6 @@ html, body {
 
 
 .flexRight{
-  /*display: flex;
-  position: absolute;
-  align-items: flex-start;
-  justify-content: left;
-  */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,14 +100,11 @@ html, body {
 }
 
 #map {
-  z-index: -1;
   background-color: white;
   height: 91%;
   width: 100%;
 }
-#map:focus{
-  
-}
+
 
 
 .khLogo{

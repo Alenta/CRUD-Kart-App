@@ -9,6 +9,8 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
 
+        
+
         // Add services to the container.
         //builder.Services.AddRazorPages();
         // Configure the HTTP request pipeline.
@@ -26,6 +28,7 @@ public class Program
         
         //app.UseHttpsRedirection(); //<-- Gives warning for now. Needed?
         app.UseRouting(); //Dunno?
+        app.UseCors();
         //app.UseAuthorization(); Dunno?
         //app.MapRazorPages(); Dunno?
 
@@ -60,4 +63,5 @@ public class Program
         app.Run();
 
     }
+
 }
