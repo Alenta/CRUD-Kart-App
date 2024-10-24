@@ -21,6 +21,11 @@ function CreateCard(){
     clonearea.appendChild(clone);
 }
 
+function OpenCard(card){
+    console.log("Running open card function");
+
+}
+
 function ToggleSideOverlay() {
     if(state===false) {
         document.getElementById("overlay").style.display = "block";

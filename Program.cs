@@ -6,7 +6,7 @@ public class Program
     {
         Console.WriteLine(Environment.GetEnvironmentVariable("API_KEY"));
         //==============SERVER SETUP=============//
-        var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins"; //Name of the new rule
         var builder = WebApplication.CreateBuilder(args);
         
         // Add services to the container.
@@ -17,7 +17,7 @@ public class Program
             options.AddPolicy(name: MyAllowSpecificOrigins,
                       builder =>
                       {
-                          builder.WithOrigins("http://localhost:5106", "http://127.0.0.1:5500") // Allow specific origins
+                          builder.WithOrigins("http://localhost:5106", "http://127.0.0.1:5501") // Allow specific origins
                                  .AllowAnyHeader()
                                  .AllowAnyMethod()
                                  .AllowCredentials(); // Allow credentials if needed

@@ -12,13 +12,14 @@ async function setupKEY(){
   })
 
   .then((APIKEY) => {
-    console.log(document.querySelector("#API").key+ "OLD");
-    document.querySelector("#API").key = APIKEY;
-    console.log(document.querySelector("#API").key+ "NEW");
+    console.log(document.querySelector("#API").APIKEY + "OLD");
+    document.querySelector("#API").APIKEY = APIKEY;
+    console.log(document.querySelector("#API").APIKEY + "NEW");
   })
 
   .catch((error) => {
       console.log(error);
   });
-
 }
+
+
